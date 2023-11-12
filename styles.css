@@ -353,6 +353,7 @@ footer {
     padding: 17rem 7% 5rem;
 	background: hsl(216, 53%, 9%);
     padding-bottom: 7rem;
+    width: 100%;
 }
 
 footer .logo {
@@ -365,7 +366,7 @@ footer .footer-container {
     grid-template-columns: repeat(5, 1fr);
     display: flex;
     justify-content: space-between;
-    text-wrap: nowrap;
+    text-wrap: wrap;
     grid-gap: 3rem;
 }
 
@@ -746,7 +747,6 @@ footer .footer-container {
     }
 }
 
-
 /*Mobile*/
 @media(max-width: 430px) {
     html, body{
@@ -777,8 +777,8 @@ footer .footer-container {
     .socials ul {
         margin-right: 8.8px !important;
     }
-}
 
+}
 
 @media(max-width: 400px) {
 
@@ -1270,5 +1270,10 @@ footer .footer-container {
 
     .footer-box .socials {
         text-align: center;
+    }
+
+    .footer-container .links li a {
+        font-size: 1.05rem;
+        width: 9rem !important;
     }
 }
