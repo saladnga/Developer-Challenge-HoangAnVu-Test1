@@ -351,10 +351,10 @@ footer {
     margin-top: -10rem;
     padding: 17rem 7% 5rem;
 	background: hsl(216, 53%, 9%);
-    padding-left: 5rem;
+    /*padding-left: 5rem;
     padding-right: 5rem;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
     padding-bottom: 7rem;
 }
 
@@ -674,10 +674,10 @@ footer .footer-container {
     footer {
         margin-top: -10rem;
         padding: 17rem 7% 5rem;
-        padding-left: 5rem;
+        /*padding-left: 5rem;
         padding-right: 5rem;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto;*/
         padding-bottom: 7rem;
     }
     
@@ -765,11 +765,38 @@ footer .footer-container {
 
 
 /*Mobile*/
-@media(max-width: 375px) {
+@media(max-width: 430px) {
+    .footer-box .location {
+        margin-left: -5.5rem !important;
+        margin-top: -5rem;
+    }
+
+    .footer-box .location i {
+        font-size: 1.5rem;
+        margin-right: -0.3rem !important;
+    }
+
+    .footer-box .location p {
+        font-size: 1.4rem;
+        min-width: 80%;
+    }
+
+    #email-error {
+        top: 65% !important;
+        left: 13rem !important;
+        font-size: 1rem;
+    }
+
+    .socials ul {
+        margin-right: 8.8px !important;
+    }
+}
+
+@media(max-width: 400px) {
 
     #email-error {
         top: 70% !important;
-        left: 10rem !important;
+        left: 11.5rem !important;
         font-size: 1rem;
     }
 
@@ -966,8 +993,8 @@ footer .footer-container {
         display: flex;
         margin-top: 5rem;
         margin-bottom: -4rem;
-        margin-right: auto;
         justify-content: center;
+        margin-right: 8.8px !important;
     }
 
     .footer-box .socials {
