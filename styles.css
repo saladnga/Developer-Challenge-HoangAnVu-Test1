@@ -979,6 +979,7 @@ footer .footer-container {
 
     .footer-container .links .link-text {
         font-size: 1.5rem;
+        width: 100% !important;
     }
 
     .socials ul {   
