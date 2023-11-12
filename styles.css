@@ -351,10 +351,6 @@ footer {
     margin-top: -10rem;
     padding: 17rem 7% 5rem;
 	background: hsl(216, 53%, 9%);
-    /*padding-left: 5rem;
-    padding-right: 5rem;
-    margin-left: auto;
-    margin-right: auto;*/
     padding-bottom: 7rem;
 }
 
@@ -465,6 +461,10 @@ footer .footer-container {
 /*Desktop*/
 @media(max-width: 1400px) {
     
+    html, body{
+        overflow-x: hidden !important; 
+    }
+
     header .logo {
         width: 12rem;
     }
@@ -674,10 +674,6 @@ footer .footer-container {
     footer {
         margin-top: -10rem;
         padding: 17rem 7% 5rem;
-        /*padding-left: 5rem;
-        padding-right: 5rem;
-        margin-left: auto;
-        margin-right: auto;*/
         padding-bottom: 7rem;
     }
     
@@ -766,6 +762,10 @@ footer .footer-container {
 
 /*Mobile*/
 @media(max-width: 430px) {
+    html, body{
+        overflow-x: hidden !important;
+    }
+
     .footer-box .location {
         margin-left: -5.5rem !important;
         margin-top: -5rem;
@@ -783,7 +783,7 @@ footer .footer-container {
 
     #email-error {
         top: 65% !important;
-        left: 13rem !important;
+        left: 31% !important;
         font-size: 1rem;
     }
 
@@ -796,13 +796,17 @@ footer .footer-container {
 
     #email-error {
         top: 70% !important;
-        left: 11.5rem !important;
+        left: 28% !important;
         font-size: 1rem;
     }
 
 	html {
 		font-size: 60%;
 	}
+
+    html, body {
+        overflow-x: hidden !important;
+    }
 
 	header {
 		padding: 2rem;
@@ -1017,6 +1021,10 @@ footer .footer-container {
 		font-size: 60%;
 	}
 
+    html, body {
+        overflow-x: hidden !important;
+    }
+
 	#banner .banner-content h1 {
 		width: 70%;
 	}
@@ -1066,6 +1074,10 @@ footer .footer-container {
 	html {
 		font-size: 55%;
 	}
+
+    html, body {
+        overflow-x: hidden !important;
+    }
 
 	#header {
 		padding: 2rem;
