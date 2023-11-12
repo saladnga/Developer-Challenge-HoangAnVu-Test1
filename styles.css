@@ -754,7 +754,7 @@ footer .footer-container {
     }
 
     .footer-box .location {
-        margin-left: -5.5rem !important;
+        margin-left: -5.8rem !important;
         margin-top: -5rem;
     }
 
@@ -943,7 +943,7 @@ footer .footer-container {
     }
     
     .footer-box .location {
-        margin-left: -5rem !important;
+        margin-left: -5.5rem !important;
         margin-top: -5rem;
     }
 
@@ -987,6 +987,7 @@ footer .footer-container {
         margin-bottom: -4rem;
         justify-content: center;
         margin-right: 8.8px !important;
+        margin-left: 12.32px !important;
     }
 
     .footer-box .socials {
@@ -994,6 +995,51 @@ footer .footer-container {
     }
 }
 
+@media(max-width: 375px) {
+    .footer-box .location {
+        margin-left: -5.4rem !important;
+    }
+}
+
+@media(max-width: 360px) {
+    .footer-box .location {
+        margin-left: -5.1rem !important;
+    }
+}
+
+@media(max-width: 1000px) {
+    .footer-box .location p {
+        font-size: 1rem;
+        width: 20rem;
+        margin-left: 2%;
+    }
+    
+    .footer-container .footer-box:nth-child(2) li img {
+	    width: 1.1rem;
+        height: 1.0rem;
+	    margin-right: 1rem;
+    }
+    
+    .footer-container .footer-box li {
+	    margin-bottom: 1.4rem;
+	    font-size: 0.8rem;
+    }   
+    
+    .footer-container .links {
+        gap: 1rem;
+    }   
+    
+    .footer-container .links li a {
+        font-size: 0.8rem;
+        width: 5rem;
+    }
+    
+    .socials ul {
+        align-items: flex-end;
+        margin-left: 1rem;
+        margin-right: 0rem;
+    }
+}
 
 @media(max-width: 900px) {
 
