@@ -1149,8 +1149,9 @@ footer .footer-container {
     }
 
     .footer-box .location {
-        margin-left: -5.8rem !important;
+        margin-left: -13.5rem !important;
         margin-top: -5rem;
+        width: 100%;
     }
 
     .footer-box .location i {
@@ -1175,6 +1176,13 @@ footer .footer-container {
 
 }
 
+@media(max-width: 415px) {
+
+    .footer-box .location {
+        margin-left: -13rem !important;
+        width: 100%;
+    }
+}
 
 @media(max-width: 400px) {
 
@@ -1339,7 +1347,7 @@ footer .footer-container {
     }
     
     .footer-box .location {
-        margin-left: -5.5rem !important;
+        margin-left: -10rem !important;
         margin-top: -5rem;
     }
 
@@ -1395,14 +1403,14 @@ footer .footer-container {
 
 @media(max-width: 375px) {
     .footer-box .location {
-        margin-left: -5.4rem !important;
+        margin-left: -9.5rem !important;
     }
 }
 
 
 @media(max-width: 360px) {
     .footer-box .location {
-        margin-left: -5.1rem !important;
+        margin-left: -9.5rem !important;
     }
 }
 
