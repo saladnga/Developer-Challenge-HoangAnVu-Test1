@@ -1,0 +1,1205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: hsl(218, 28%, 13%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;;
+}
+
+h1, h2, h3, a, .btn {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: hsl(218, 28%, 15%);
+    font-family: 'Raleway', sans-serif;
+    padding: 6rem 6% 4rem;
+}
+
+header .logo {
+    width: 12rem;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-bar a {
+    display: flex;
+    justify-content: space-evenly;
+    width: 8rem;
+    color: inherit;
+    text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+.navigation-bar a:hover {
+	font-weight: 700;
+    text-decoration: underline;
+}
+
+#banner {
+    display: flex;	
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+    background: hsl(218, 28%, 15%);
+}
+
+#banner .banner-image {
+    margin-bottom: 10rem;
+}
+
+#banner .banner-image img {
+    width: 50rem;
+    height: auto;
+}
+
+#banner .banner-content {
+    padding: 0rem 1rem 15rem;
+	width: 100%;
+	min-height: 40rem;
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner .banner-content h1 {
+    font-size: 3rem;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-top: -8rem;
+    margin-bottom: 2.5rem;
+}
+
+#banner .banner-content p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+#banner .banner-content .btn {
+    text-decoration: none;
+    font-size: 1.4rem;
+	padding: 1.5rem 8rem;
+	background: linear-gradient(to right, hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%) 70%);
+	color: hsl(0, 0%, 100%);
+	border-radius: 3rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+#banner .banner-content .btn:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.375);
+}
+
+
+#features {
+    background: hsl(218, 28%, 13%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+    margin-bottom: 1rem;
+    padding: 1rem 15%;
+}
+
+#features .feature-box {
+    text-align: center;
+    margin-top: -5rem;
+    padding-bottom: 8rem;
+} 
+
+.feature-box img {
+    width: 8rem;
+    margin-bottom: 2.5rem;
+}
+
+.feature-box:nth-child(2) img {
+    width: 7rem;
+    margin-bottom: 1rem;
+}
+
+.feature-box:nth-child(3) img {
+    margin-bottom: 2rem;
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-box p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#banner-2 {
+	display: grid;	
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5rem;
+    padding: 1rem 7%;
+	margin-bottom: 5rem;
+	align-items: center;
+}
+
+#banner-2 .banner2-image{
+    width: 100%;
+    height: auto;
+}
+
+#banner-2 .banner2-content h2 {
+    margin-top: 4rem;
+    font-size: 3rem;
+    width: 60%;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+#banner-2 .banner2-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 98%;
+    margin-bottom: 2rem;
+}
+
+#banner-2 .banner2-content a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: hsl(176, 68%, 64%);
+    border-bottom: 0.1rem solid hsl(176, 68%, 64%);
+}
+
+#banner-2 .banner2-content a img{
+    width: 3%;
+    margin-left: 0.5rem;
+    margin-bottom: -0.3rem;
+}
+
+#banner-2 .banner2-content a:hover {
+	color: white;
+	border-bottom: 0.1rem solid white;
+}
+
+#banner-2 .banner2-content a:hover img {
+    filter: grayscale(100%) contrast(5);
+}
+
+#testimonials {
+    padding: 10rem 10%;
+    margin-bottom: 5rem;
+}
+
+#testimonials .testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    position: relative;
+}
+
+#testimonials .testimonials-container .quotes {
+    position: absolute;
+    z-index: -1;
+    width: 5rem;
+    transform: translate(-1rem, -4rem);
+}
+
+#testimonials .box {
+    margin-top: -1rem;
+    background: hsl(219, 30%, 18%);
+    padding: 1rem; 
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(35, 55, 62, 0.5);
+}
+
+#testimonials .box .review {
+    margin: 0.8rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+#testimonials .box .user {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#testimonials .box .user img {
+    border-radius: 50%;
+    width: 2rem;
+    height: auto;
+    object-fit: cover;
+}
+
+#testimonials .box .user .details h4 {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+#testimonials .box .user .details p {
+    font-size: 0.7rem;
+}
+
+#early-access {
+    padding: 2rem;
+}
+
+#early-access .access-box {
+	background: hsl(217, 28%, 15%);
+	max-width: 60rem;
+    width: 100%;
+	margin: 0 auto;
+	padding: 4rem 6rem 3rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+	transform: translateY(1rem);
+}
+
+#early-access .access-box h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#early-access .access-box p {
+    font-size: 1rem;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+#early-access .access-box .early-access-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#early-access .access-box .early-access-form .email-form {
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    border-color: black;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.1rem;
+}
+
+#early-access .access-box .early-access-form .email-form::placeholder {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+#early-access .access-box .early-access-form .btn {
+    color: hsl(0, 0%, 100%);
+    padding:  1.2rem 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+	background: linear-gradient(to right, hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%) 70%);
+	border-radius: 3rem;
+	font-weight: 700;
+	cursor: pointer;
+    border-color: black;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+#early-access .access-box .early-access-form .btn:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.375);
+}
+
+#email-error {
+    position: absolute;
+    top: 88%;
+    left: 9.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: red;
+}
+
+footer {
+    margin-top: -10rem;
+    padding: 17rem 7% 5rem;
+	background: hsl(216, 53%, 9%);
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 7rem;
+}
+
+footer .logo {
+    width: 12rem;
+    margin-bottom: 2.5rem;
+}
+
+footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    justify-content: space-between;
+    text-wrap: nowrap;
+    grid-gap: 3rem;
+}
+
+.footer-box .location {
+    display: flex;
+    gap: 1rem;
+    text-wrap: wrap;
+}
+
+.footer-box .location i {
+    font-size: 1.2rem;
+}
+
+.footer-box .location p {
+    font-size: 1rem;
+    width: 22rem;
+}
+
+.footer-container .footer-box:nth-child(2) li img {
+	width: 1.3rem;
+    height: 1.1rem;
+	margin-right: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+.footer-container .footer-box:nth-child(2) {
+    margin-right: 6rem;
+}
+
+.footer-container .footer-box li {
+	margin-bottom: 1.4rem;
+	font-size: 0.9rem;
+    display: flex;
+}
+
+.footer-container .links {
+    display: flex;
+    gap: 3rem;
+}   
+
+.footer-container .links li a {
+    font-size: 1rem;
+    text-decoration: none;
+    width: 8rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.footer-container .links li a:hover {
+	font-weight: 700;
+}
+
+.socials ul {
+    display: flex;
+    text-align: center;
+    margin-left: 4rem;
+    margin-right: -3rem;
+}
+
+.socials li {
+    display: inline-block;
+    font-size: 10rem;
+}
+
+.socials a {
+    display: inline-block;
+	margin-right: 1rem;
+	border: 0.1rem solid hsl(0, 0%, 100%);
+	border-radius: 50%;	
+	line-height: 2.8rem;
+	text-align: center;
+	height: 2.8rem;
+	width: 2.8rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.socials a i {
+	font-size: 1.3rem;
+	border: none;
+}
+
+.socials a:hover {
+	color: hsl(176, 68%, 64%);
+	border: 0.1rem solid hsl(176, 68%, 64%);
+}
+
+
+
+
+
+
+
+
+
+/*Desktop*/
+@media(max-width: 1400px) {
+    
+    header .logo {
+        width: 12rem;
+    }
+    
+    .navigation-bar a {
+        width: 6rem;
+        font-size: 1rem;
+    
+    }
+    #banner .banner-image {
+        margin-bottom: 10rem;
+    }
+    
+    #banner .banner-image img {
+        width: 45rem;
+    }
+    
+    #features {
+        margin-bottom: 1rem;
+        margin-top: -8rem;
+        padding: 1.5rem 15%;    
+    }
+
+    #banner .banner-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    #banner .banner-content p {
+        font-size: 1.3rem;
+        line-height: 1.5;
+        width: 45%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+    
+    #banner .banner-content .btn {
+        font-size: 1.4rem;
+	    padding: 1.5rem 8rem;
+    }        
+    
+    .feature-box img {
+        width: 6rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    #features {
+    margin-bottom: 1rem;
+    padding: 1.5rem 15%;
+    }
+    
+    #features .feature-box {
+        margin-top: -5rem;
+        padding-bottom: 8rem;
+    } 
+    
+    .feature-box img {
+        width: 6rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .feature-box:nth-child(2) img {
+        width: 5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .feature-box:nth-child(3) img {
+        margin-bottom: 2rem;
+    }
+    
+    .feature-box h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-box p {
+        font-size: 1rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    #banner-2 {
+	    grid-gap: 5rem;
+        padding: 1rem 7%;
+	    margin-bottom: 5rem;
+    }
+    
+    #banner-2 .banner2-image{
+        width: 100%;
+        height: auto;
+    }
+    
+    #banner-2 .banner2-content h2 {
+        margin-top: 4rem;
+        font-size: 2.5rem;
+        width: 60%;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+    #banner-2 .banner2-content p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        width: 98%;
+        margin-bottom: 2rem;
+    }
+    
+    #banner-2 .banner2-content a {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    #banner-2 .banner2-content a img{
+        width: 3%;
+        margin-left: 0.5rem;
+        margin-bottom: -0.3rem;
+    }
+    
+    #testimonials {
+        padding: 10rem 10%;
+        margin-bottom: 5rem;
+    }
+
+    #testimonials .testimonials-container {
+        gap: 2rem;
+    }
+    
+    #testimonials .box {
+        margin-top: -1rem;
+        padding: 1rem; 
+    }
+    
+    #testimonials .box .review {
+        width: 95%;
+        margin: 0.8rem;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+    }
+    
+    #testimonials .box .user {
+        margin: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    #testimonials .box .user img {
+        width: 1.7rem;
+    }
+    
+    #testimonials .box .user .details h4 {
+        font-size: 0.7rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    #testimonials .box .user .details p {
+        font-size: 0.6rem;
+    }
+    
+    #early-access {
+        padding: 2rem;
+    }
+    
+    #early-access .access-box {
+	    max-width: 60rem;
+        width: 100%;
+	    margin: 0 auto;
+	    padding: 4rem 6rem 3rem;
+    }
+    
+    #early-access .access-box h2 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    #early-access .access-box p {
+        font-size: 1rem;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+    }
+    
+    #early-access .access-box .early-access-form {
+        gap: 2rem;
+    }
+    
+    #early-access .access-box .early-access-form .email-form {
+        padding: 1rem 3rem;
+        font-size: 1.1rem;
+    }
+    
+    #early-access .access-box .early-access-form .email-form::placeholder {
+        font-size: 1rem;
+    }
+    
+    #early-access .access-box .early-access-form .btn {
+        padding:  1rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    #email-error {
+        top: 88%;
+        left: 9.5rem;
+        font-size: 1rem;
+    }
+    
+    footer {
+        margin-top: -10rem;
+        padding: 17rem 7% 5rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 7rem;
+    }
+    
+    footer .logo {
+        width: 10rem;
+        margin-left: 2%;
+        margin-bottom: 2.5rem;
+    }
+    
+    footer .footer-container {
+        grid-gap: 3rem;
+    }
+    
+    .footer-box .location {
+        gap: 1rem;
+        margin-left: -2rem;
+    }
+    
+    .footer-box .location i {
+        font-size: 1.2rem;
+        margin-left: 12%;
+        margin-top: 0.5rem;
+    }
+    
+    .footer-box .location p {
+        font-size: 1rem;
+        width: 25rem;
+        margin-left: 2%;
+    }
+    
+    .footer-container .footer-box:nth-child(2) li img {
+	    width: 1.2rem;
+        height: 1.1rem;
+	    margin-right: 1.3rem;
+        margin-top: 0.2rem;
+    }
+    
+    .footer-container .footer-box:nth-child(2) {
+        margin-right: 4rem;
+    }
+    
+    .footer-container .footer-box li {
+	    margin-bottom: 1.4rem;
+	    font-size: 0.9rem;
+    }   
+    
+    .footer-container .links {
+        gap: 1rem;
+    }   
+    
+    .footer-container .links li a {
+        font-size: 1.05rem;
+        width: 8rem;
+    }
+    
+    .socials ul {
+        margin-left: 1rem;
+        margin-right: 0rem;
+    }
+    
+    .socials li {
+        font-size: 3rem;
+    }
+    
+    .socials a {
+	    margin-right: 1rem;
+	    border-radius: 50%;	
+	    line-height: 2.2rem;
+	    text-align: center;
+	    height: 2.2rem;
+	    width: 2.2rem;
+    }
+    
+    .socials a i {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*Mobile*/
+@media(max-width: 375px) {
+
+    #email-error {
+        top: 70% !important;
+        left: 10rem !important;
+        font-size: 1rem;
+    }
+
+	html {
+		font-size: 60%;
+	}
+
+	header {
+		padding: 2rem;
+	}
+
+	header .logo {
+		width: 10rem;
+	}
+
+	header .navigation-bar a {
+		font-size: 1.5rem;
+		margin-left: 1rem;
+	}
+
+	#banner .banner-image img {
+        padding-top: 5rem;
+        min-width: 35rem;
+    }
+
+	#banner .banner-content {
+        margin-top: -5rem;
+		padding: 0rem 1rem 2rem;
+		background: url(./images/bg-curvy-mobile.svg) no-repeat top center/cover;
+	}
+
+	#banner .banner-content h1 {
+		font-size: 2.5rem;
+		width: 90%;
+		margin-bottom: 2rem;
+	}
+
+	#banner .banner-content p {
+		font-size: 1.4rem !important;
+		line-height: 1.5;
+		max-width: 70% !important;
+		margin: 0 auto;
+		margin-bottom: 3.5rem;
+	}
+
+	#features {
+		padding: 2rem 15%;
+		grid-template-columns: 1fr;
+	}
+
+	#banner-2 {
+		padding: 3rem 7%;
+		grid-template-columns: 1fr;
+        margin-left: 2%;
+	}
+
+	#banner-2 .banner2-content h2 {
+		width: 100%;
+        font-size: 2rem;
+	}
+
+	#banner-2 .banner2-content p {
+		font-size: 1.5rem;
+		width: 97% !important;
+	}
+
+    #banner-2 .banner2-content a {
+        font-size: 1.3rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    #banner-2 .banner2-content a img{
+        width: 4%;
+        margin-left: 0.5rem;
+        margin-bottom: -0.3rem;
+    }
+
+	#testimonials .testimonials-container {
+		grid-template-columns: 1fr;
+        gap: 4rem;
+	}
+
+	#testimonials .testimonials-container .quotes {
+		width: 3rem;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+	}
+
+    #testimonials .box .review {
+        font-size: 1.3rem;
+    }
+    
+    #testimonials .box .user img {
+        width: 3rem;
+    }
+    
+    #testimonials .box .user .details h4 {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+    #testimonials .box .user .details p {
+        font-size: 0.5rem;
+    }
+
+	#early-access .access-box .early-access-form {
+		flex-direction: column;
+	}
+
+	#early-access .access-box p {
+		width: 100%;
+        font-size: 1.5rem;
+	}
+
+    #early-access .access-box h2 {
+        font-size: 2rem;
+	}
+
+	#early-access .access-box .early-access-form .btn {
+		width: 90% !important;
+		padding: 1.5rem;
+		font-size: 1.5rem;
+	}
+
+	#early-access .access-box {
+		padding: 4rem !important;
+	}
+
+    #early-access .access-box .early-access-form .email-form {
+        padding: 1.5rem;
+        width: 90%;
+    }
+
+    footer {
+        width: 100%;
+        padding-top: 25rem;
+        margin-top: -20rem;
+        padding-bottom: -50rem !important;
+    }
+
+	footer .footer-container {
+        padding: 5rem 15% 0rem;
+        display: grid;
+		grid-template-columns: 1fr;
+        gap: 1rem;
+        min-width: 128%;
+	}
+
+    footer .logo {
+        width: 18rem;
+        margin-right: auto;
+    }
+    
+    .footer-box .location {
+        margin-left: -5rem !important;
+        margin-top: -5rem;
+    }
+
+    .footer-box .location i {
+        font-size: 1.5rem;
+    }
+
+    .footer-box .location p {
+        font-size: 1.8rem;
+        min-width: 90%;
+    }
+
+    .footer-box img {
+        width: 1.4rem !important;
+        height: 1.3rem !important;
+    }
+
+    .footer-box p {
+        font-size: 1.4rem;
+    }
+    
+    footer .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: -5rem;
+    }
+
+    .footer-container .links {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .footer-container .links .link-text {
+        font-size: 1.5rem;
+    }
+
+    .socials ul {   
+        display: flex;
+        margin-top: 5rem;
+        margin-bottom: -4rem;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .footer-box .socials {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 900px) {
+
+	html {
+		font-size: 60%;
+	}
+
+	#banner .banner-content h1 {
+		width: 70%;
+	}
+
+	#banner .banner-content p {
+		width: 70%;
+	}
+
+	#banner-2 .banner2-content h2 {
+		width: 80%;
+	}
+
+	#banner-2 .banner2-content p {
+		width: 80%;
+	}
+
+    footer {
+        width: 100%;
+    }
+
+	footer .footer-container {
+		grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+	}
+
+    footer .logo {
+        margin-left: 0%;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 600px) {
+
+    #email-error {
+        top: 65%;
+        left: 34%;
+        font-size: 1rem;
+    }
+
+	html {
+		font-size: 55%;
+	}
+
+	#header {
+		padding: 2rem;
+	}
+
+	#header .logo img {
+		width: 10rem;
+	}
+
+	#header .navigation-bar a {
+		font-size: 1.5rem;
+		margin-left: 2rem;
+	}
+
+	#banner .banner-image img {
+		width: 25rem;
+	}
+
+	#banner .banner-content {
+		padding: 6rem 1rem 12rem;
+		background: url(./images/bg-curvy-mobile.svg) no-repeat top center/cover;
+	}
+
+	#banner .banner-content h1 {
+		font-size: 2.5rem;
+		width: 90%;
+		margin-bottom: 2rem;
+	}
+
+	#banner .banner-content p {
+		font-size: 1.5rem;
+		line-height: 1.5;
+		width: 70%;
+		margin: 0 auto;
+		margin-bottom: 3.5rem;
+	}
+
+	#features {
+		padding: 2rem 15%;
+		grid-template-columns: 1fr;
+	}
+
+	#banner-2 {
+		padding: 3rem 7%;
+		grid-template-columns: 1fr;
+	}
+
+	#banner-2 .banner2-content h2 {
+		width: 100%;
+	}
+
+	#banner-2 .banner2-content p {
+		font-size: 1.5rem;
+		width: 100%;
+	}
+
+	#testimonials .testimonials-container {
+		grid-template-columns: 1fr;
+	}
+
+	#testimonials .testimonials-container .quotes {
+		width: 4rem;
+	}
+
+	#testimonials .box .user .details h4 {
+		font-size: 1.1rem;
+	}
+
+	#testimonials .box .user .details p {
+		font-size: 1.1rem
+	}
+
+	#early-access .access-box .early-access-form {
+		flex-direction: column;
+	}
+
+	#early-access .access-box p {
+		width: 100%;
+	}
+
+	#early-access .access-box .early-access-form .btn {
+		width: 100%;
+		padding: 1.5rem;
+		font-size: 1.5rem;
+	}
+
+	#early-access .access-box {
+		padding: 2rem;
+	}
+
+	footer .footer-container {
+		grid-template-columns: 1fr;
+	}
+    footer {
+        padding-top: 25rem;
+        margin-top: -20rem;
+        padding-bottom: -50rem !important;
+        width: 100%;
+    }
+
+	footer .footer-container {
+        padding: 5rem 10% 0rem;
+        display: grid;
+		grid-template-columns: 1fr;
+        gap: 1rem;
+        min-width: 128%;
+	}
+
+    footer .logo {
+        width: 18rem;
+        margin-right: auto;
+    }
+    
+    .footer-box .location {
+        margin-left: -7rem;
+        margin-top: -5rem;
+    }
+
+    .footer-box .location i {
+        font-size: 1.5rem;
+    }
+
+    .footer-box .location p {
+        font-size: 1.4rem;
+        min-width: 80%;
+    }
+
+    .footer-box img {
+        width: 1.4rem !important;
+        height: 1.3rem !important;
+    }
+
+    .footer-box p {
+        font-size: 1.4rem;
+    }
+    
+    footer .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: -5rem;
+    }
+
+    .footer-container .links {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .footer-container .links .link-text {
+        font-size: 1.5rem;
+    }
+
+    .socials ul {   
+        display: flex;
+        margin-top: 5rem;
+        margin-bottom: -4rem;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .footer-box .socials {
+        text-align: center;
+    }
+}
